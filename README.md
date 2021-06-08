@@ -29,6 +29,7 @@ Enter in your crew information and the app will generate a webpage for you.
 
 ![Crewnet demo](assets/crewnet.jpg)
 ![Crewnet gif](assets/crewgif.gif)
+![NPM run test gif](assets/crewnettest.gif)
 
 https://drive.google.com/file/d/1YtOCPgjqDdZl6iizO9wy5hg_ipvvJ45s/view
 
