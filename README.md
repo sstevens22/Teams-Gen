@@ -20,6 +20,7 @@ An easy app to organize your crew!
 *Steps required to install project:*
 
 Run npm I and have node.js installed.
+Also this app uses inquirer and jest packages so also make sure you run npm install jest inquirer.
 
 ## Usage 
 
