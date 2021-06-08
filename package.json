@@ -1,0 +1,27 @@
+{
+  "name": "package.json",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sstevens22/Teams-Gen.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sstevens22/Teams-Gen/issues"
+  },
+  "homepage": "https://github.com/sstevens22/Teams-Gen#readme",
+  "dependencies": {
+    "inquirer": "^8.1.0",
+    "jest": "^26.6.3",
+    "require": "^2.4.20"
+  }
+}
