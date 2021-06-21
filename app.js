@@ -18,7 +18,7 @@ const addManager = () => {
           if (nameInput) {
             return true;
           } else {
-            console.log("Please enter the manager's name!");
+            console.log("Please enter the manager's name.");
             return false;
           }
         },
@@ -29,7 +29,7 @@ const addManager = () => {
         message: "Please enter the manager's ID.",
         validate: (nameInput) => {
           if (isNaN(nameInput)) {
-            console.log("Please enter the manager's ID!");
+            console.log("Please enter a valid ID.");
             return false;
           } else {
             return true;
@@ -45,7 +45,7 @@ const addManager = () => {
           if (valid) {
             return true;
           } else {
-            console.log("Please enter an email!");
+            console.log("Please enter a valid email.");
             return false;
           }
         },
@@ -56,7 +56,7 @@ const addManager = () => {
         message: "Please enter the manager's office number",
         validate: (nameInput) => {
           if (isNaN(nameInput)) {
-            console.log("Please enter an office number!");
+            console.log("Please enter a valid office number.");
             return false;
           } else {
             return true;
@@ -75,9 +75,7 @@ const addManager = () => {
 
 const addEmployee = () => {
   console.log(`
-    =================
-    Adding employees to the team
-    =================
+    -- Adding employees to the team --
     `);
 
   return inquirer
@@ -85,7 +83,7 @@ const addEmployee = () => {
       {
         type: "list",
         name: "role",
-        message: "Please choose your employee's role",
+        message: "Choose your employee's role",
         choices: ["Engineer", "Intern"],
       },
       {
@@ -96,7 +94,7 @@ const addEmployee = () => {
           if (nameInput) {
             return true;
           } else {
-            console.log("Please enter an employee's name!");
+            console.log("Please enter an employee's name.");
             return false;
           }
         },
@@ -107,7 +105,7 @@ const addEmployee = () => {
         message: "Please enter the employee's ID.",
         validate: (nameInput) => {
           if (isNaN(nameInput)) {
-            console.log("Please enter the employee's ID!");
+            console.log("Please enter a valid employee ID.");
             return false;
           } else {
             return true;
@@ -123,7 +121,7 @@ const addEmployee = () => {
           if (valid) {
             return true;
           } else {
-            console.log("Please enter an email!");
+            console.log("Please enter a valid email.");
             return false;
           }
         },
@@ -137,20 +135,20 @@ const addEmployee = () => {
           if (nameInput) {
             return true;
           } else {
-            console.log("Please enter the employee's github username!");
+            console.log("Please enter a valid github username!");
           }
         },
       },
       {
         type: "input",
         name: "school",
-        message: "Please enter the intern's school",
+        message: "Please enter the name of the intern's school",
         when: (input) => input.role === "Intern",
         validate: (nameInput) => {
           if (nameInput) {
             return true;
           } else {
-            console.log("Please enter the intern's school!");
+            console.log("Please enter a valid school name for the intern.");
           }
         },
       },
@@ -193,7 +191,7 @@ const writeFile = (data) => {
       return;
     } else {
       console.log(
-        "Your team profile has been successfully created! Please check out the index.html"
+        "Your team profile has been successfully created!"
       );
     }
   });
